@@ -16,8 +16,7 @@ class PackagingChallangeApplicationTest {
 
 	@Test
 	public void pack() throws APIException, IOException {
-		Assert.assertEquals(Packer.pack(FILE_PATH), "4\n-\n2,7\n8,9\n8,13,10,11,12,14,15,16,17,18,19,20,7,2,5\n" +
-				"-\n");
+		Assert.assertEquals(Packer.pack(FILE_PATH), "4\n-\n2,7\n8,9\n");
 	}
 
 	@Test
